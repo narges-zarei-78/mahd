@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/admin/register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
