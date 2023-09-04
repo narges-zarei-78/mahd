@@ -17,38 +17,39 @@ return [
 
     // Direction, according to language
     // (left-to-right vs right-to-left)
-    'html_direction' => 'rtl',
+    'html_direction'          => 'rtl',
 
     // ----
     // HEAD
     // ----
 
     // Project name. Shown in the window title.
-    'project_name' => 'Mahd-Narges',
+    'project_name'            => 'Mahd-Narges',
 
     // When clicking on the admin panel's top-left logo/name,
     // where should the user be redirected?
     // The string below will be passed through the url() helper.
     // - default: '' (project root)
     // - alternative: 'admin' (the admin's dashboard)
-    'home_link' => '',
+    'home_link'               => '',
 
     // Content of the HTML meta robots tag to prevent indexing and link following
-    'meta_robots_content' => 'noindex, nofollow',
+    'meta_robots_content'     => 'noindex, nofollow',
 
     // ------
     // STYLES
     // ------
 
     // CSS files that are loaded in all pages, using Laravel's asset() helper
-    'styles' => [
+    'styles'                  => [
         'packages/backpack/base/css/bundle.css', // has primary color electric purple (backpack default)
         // 'packages/backpack/base/css/blue-bundle.css', // has primary color blue
 
         // Here's what's inside the bundle:
         // 'packages/@digitallyhappy/backstrap/css/style.min.css',
         // 'packages/animate.css/animate.min.css',
-        // 'packages/noty/noty.css',
+        'css/fontiran.css',
+        'css/style.css',
 
         // Load the fonts separately (so that you can replace them at will):
         'packages/source-sans-pro/source-sans-pro.css',
@@ -63,7 +64,7 @@ return [
     ],
 
     // CSS files that are loaded in all pages, using Laravel's mix() helper
-    'mix_styles' => [ // file_path => manifest_directory_path
+    'mix_styles'              => [ // file_path => manifest_directory_path
         // 'css/app.css' => '',
     ],
 
@@ -72,13 +73,13 @@ return [
     // ------
 
     // Menu logo. You can replace this with an <img> tag if you have a logo.
-    'project_logo'   => '<b>Mahd</b>-Narges',
+    'project_logo'            => '<b>Mahd</b>-Narges',
 
     // Show / hide breadcrumbs on admin panel pages.
-    'breadcrumbs' => true,
+    'breadcrumbs'             => true,
 
     // Horizontal navbar classes. Helps make the admin panel look similar to your project's design.
-    'header_class' => 'app-header bg-warning border-0 navbar',
+    'header_class'            => 'app-header bg-warning border-0 navbar',
     // For background colors use: bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan, bg-white
     // For links to be visible on different background colors use: "navbar-dark", "navbar-light", "navbar-color"
 
@@ -87,11 +88,11 @@ return [
     // ----
 
     // Body element classes.
-    'body_class' => 'app aside-menu-fixed sidebar-lg-show',
+    'body_class'              => 'app aside-menu-fixed sidebar-lg-show',
     // Try sidebar-hidden, sidebar-fixed, sidebar-compact, sidebar-lg-show
 
     // Sidebar element classes.
-    'sidebar_class' => 'sidebar sidebar-pills bg-light-blue',
+    'sidebar_class'           => 'sidebar sidebar-pills bg-light-blue',
     // Remove "sidebar-transparent" for standard sidebar look
     // Try "sidebar-light" or "sidebar-dark" for dark/light links
     // You can also add a background class like bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan
@@ -101,25 +102,25 @@ return [
     // ------
 
     // Footer element classes.
-    'footer_class' => 'app-footer d-none',
+    'footer_class'            => 'app-footer d-none',
     // hide it with d-none
     // change background color with bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan, bg-white
 
     // Developer or company name. Shown in footer.
-    'developer_name' => 'Cristian Tabacitu',
+    'developer_name'          => 'Narges',
 
     // Developer website. Link in footer. Type false if you want to hide it.
-    'developer_link' => 'http://tabacitu.ro',
+    'developer_link'          => '',
 
     // Show powered by Laravel Backpack in the footer? true/false
-    'show_powered_by' => false,
+    'show_powered_by'         => false,
 
     // -------
     // SCRIPTS
     // -------
 
     // JS files that are loaded in all pages, using Laravel's asset() helper
-    'scripts' => [
+    'scripts'                 => [
         // Backstrap includes jQuery, Bootstrap, CoreUI, PNotify, Popper
         'packages/backpack/base/js/bundle.js',
 
@@ -139,7 +140,7 @@ return [
     ],
 
     // JS files that are loaded in all pages, using Laravel's mix() helper
-    'mix_scripts' => [// file_path => manifest_directory_path
+    'mix_scripts'             => [// file_path => manifest_directory_path
         // 'js/app.js' => '',
     ],
 
@@ -150,7 +151,7 @@ return [
     // All JS and CSS assets defined above have this string appended as query string (?v=string).
     // If you want to manually trigger cachebusting for all styles and scripts,
     // append or prepend something to the string below, so that it's different.
-    'cachebusting_string' => \PackageVersions\Versions::getVersion('backpack/crud'),
+    'cachebusting_string'     => \PackageVersions\Versions::getVersion('backpack/crud'),
 
     /*
     |--------------------------------------------------------------------------
@@ -164,7 +165,7 @@ return [
     | By default the registration is open only on localhost.
     */
 
-    'registration_open' => env('BACKPACK_REGISTRATION_OPEN', env('APP_ENV') === 'local'),
+    'registration_open'                        => env('BACKPACK_REGISTRATION_OPEN', env('APP_ENV') === 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -174,12 +175,12 @@ return [
 
     // The prefix used in all base routes (the 'admin' in admin/dashboard)
     // You can make sure all your URLs use this prefix by using the backpack_url() helper instead of url()
-    'route_prefix' => 'admin',
+    'route_prefix'                             => 'admin',
 
     // The web middleware (group) used in all base & CRUD routes
     // If you've modified your "web" middleware group (ex: removed sessions), you can use a different
     // route group, that has all the the middleware listed below in the comments.
-    'web_middleware' => 'web',
+    'web_middleware'                           => 'web',
     // Or you can comment the above, and uncomment the complete list below.
     // 'web_middleware' => [
     //     \App\Http\Middleware\EncryptCookies::class,
@@ -192,19 +193,19 @@ return [
     // Set this to false if you would like to use your own AuthController and PasswordController
     // (you then need to setup your auth routes manually in your routes.php file)
     // Warning: if you disable this, the password recovery routes (below) will be disabled too!
-    'setup_auth_routes' => true,
+    'setup_auth_routes'                        => true,
 
     // Set this to false if you would like to skip adding the dashboard routes
     // (you then need to overwrite the login route on your AuthController)
-    'setup_dashboard_routes' => true,
+    'setup_dashboard_routes'                   => true,
 
     // Set this to false if you would like to skip adding "my account" routes
     // (you then need to manually define the routes in your web.php)
-    'setup_my_account_routes' => true,
+    'setup_my_account_routes'                  => true,
 
     // Set this to false if you would like to skip adding the password recovery routes
     // (you then need to manually define the routes in your web.php)
-    'setup_password_recovery_routes' => true,
+    'setup_password_recovery_routes'           => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -216,7 +217,8 @@ return [
     // for a certain email, to make sure they cannot be spammed that way.
     // How many seconds should a visitor wait, after they've requested a
     // password reset, before they can try again for the same email?
-    'password_recovery_throttle_notifications' => 600, // time in seconds
+    'password_recovery_throttle_notifications' => 600,
+    // time in seconds
 
     // Backpack will prevent an IP from trying to reset the password too many times,
     // so that a malicious actor cannot try too many emails, too see if they have
@@ -226,7 +228,7 @@ return [
     // attempt a password reset? Take into account that user might wrongly
     // type an email at first, so at least allow one more try.
     // Defaults to 3,10 - 3 times in 10 minutes.
-    'password_recovery_throttle_access' => '3,10',
+    'password_recovery_throttle_access'        => '3,10',
 
     /*
     |--------------------------------------------------------------------------
@@ -235,42 +237,42 @@ return [
     */
 
     // Fully qualified namespace of the User model
-    'user_model_fqn' => config('auth.providers.users.model'),
+    'user_model_fqn'                           => config('auth.providers.users.model'),
     // 'user_model_fqn' => App\User::class, // works on Laravel <= 7
     // 'user_model_fqn' => App\Models\User::class, // works on Laravel >= 8
 
     // The classes for the middleware to check if the visitor is an admin
     // Can be a single class or an array of classes
-    'middleware_class' => [
+    'middleware_class'                         => [
         App\Http\Middleware\CheckIfAdmin::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         // \Backpack\CRUD\app\Http\Middleware\UseBackpackAuthGuardInsteadOfDefaultAuthGuard::class,
     ],
 
     // Alias for that middleware
-    'middleware_key' => 'admin',
+    'middleware_key'                           => 'admin',
     // Note: It's recommended to use the backpack_middleware() helper everywhere, which pulls this key for you.
 
     // Username column for authentication
     // The Backpack default is the same as the Laravel default (email)
     // If you need to switch to username, you also need to create that column in your db
-    'authentication_column'      => 'email',
-    'authentication_column_name' => 'Email',
+    'authentication_column'                    => 'email',
+    'authentication_column_name'               => 'Email',
 
     // The guard that protects the Backpack admin panel.
     // If null, the config.auth.defaults.guard value will be used.
-    'guard' => 'backpack',
+    'guard'                                    => 'backpack',
 
     // The password reset configuration for Backpack.
     // If null, the config.auth.defaults.passwords value will be used.
-    'passwords' => 'backpack',
+    'passwords'                                => 'backpack',
 
     // What kind of avatar will you like to show to the user?
     // Default: gravatar (automatically use the gravatar for their email)
     // Other options:
     // - placehold (generic image with their first letter)
     // - example_method_name (specify the method on the User model that returns the URL)
-    'avatar_type' => 'gravatar',
+    'avatar_type'                              => 'gravatar',
 
     /*
     |--------------------------------------------------------------------------
