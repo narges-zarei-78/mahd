@@ -22,6 +22,9 @@ class User extends Authenticatable
         'name',
         'email',
         'national_code',
+        'madrak',
+        'semat',
+        'image',
         'password',
     ];
 
@@ -43,4 +46,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setImageAttribute($value)
+    {
+        $attribute_name   = "image";
+        $disk             = "public";
+        $destination_path = "user/images";
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
+    }
+
+    public function scopeJustStudents($query)
+    {
+        $query->whereDoesntHave('roles');
+    }
 }

@@ -29,6 +29,11 @@ class LessonCrudController extends CrudController
         CRUD::setModel(\App\Models\Lesson::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/lesson');
         CRUD::setEntityNameStrings('درس', 'دروس');
+        if (!(backpack_user()->hasRole('admin') || backpack_user()->hasRole('teacher'))) {
+            $this->crud->denyAccess(['create', 'update', 'delete', 'store']);
+            $this->crud->removeAllButtons();
+            $this->crud->removeColumn('action');
+        }
     }
 
     /**
