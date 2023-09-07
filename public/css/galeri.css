@@ -1,0 +1,173 @@
+/* =================
+      font
+================= */
+@font-face {
+    font-family: "vazir";
+    src: url(../font/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.ttf),
+    url(../font/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.woff);
+}
+body{
+    background-color: #fff5f3;
+    direction: rtl;
+    font-family: "vazir";
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:#ff8800;
+    
+}
+.cont-body{
+    background-color: #FFFFFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.titr{
+    color: #ff8800;
+    text-shadow:2px 2px 3px #f88808;
+}
+.text{
+    color: #ff8800;
+}
+.bg-asli{
+    background-color: #feefea;
+}
+.titr-saie-tosi{
+    text-shadow:0 5px 15px rgba(106, 103, 103, 0.473);
+}
+/* =================
+      meno
+================= */
+.btn-narengi{
+    background-color: #ff8800;
+}
+.btn-narengi :hover{
+    background-color: #fff5f3;
+}
+.btn-narengi1{
+    border: none;
+    background-color: #ff8800;
+}
+
+
+.nav-item :hover{
+    color: #f88808;
+    background-color:#fff5f3 ;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 1s linear;;
+}
+.nav-meno{
+    padding-left: 5rem;
+}
+
+
+/* =================
+galeri
+================= */
+.galeri-images{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top:2rem;
+    
+    
+}
+.image-galeri{
+    height: 12rem;
+    width: 12rem;
+    border-bottom: 1rem solid #8be1b1;
+    border-top: 1rem solid #00c2df;
+    border-left:1rem solid #efbaf8;
+    border-right: 1rem solid #fddd3f;
+    margin-top: 1rem;
+    
+}
+.image-galeri:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s linear;
+    
+}
+
+@media screen and (min-width: 1170px) {
+    .image-galeri{
+        height: 20rem;
+        width: 30rem;
+    }
+    .galeri-images {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:2rem;
+    }
+}
+
+/* =================
+footer
+================= */
+.footer-conteiner{
+    background-color: #103641;
+   
+    
+}
+.icon-footer{
+    display: grid;
+    grid-template-columns: 20px 25rem;
+}
+.icon-footer-2{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px ;
+}
+.icon-footers{
+    color:#b0bcc7;
+    
+}
+
+.darbare-ma-footer{
+    max-width: 20rem;
+    line-height: 2rem;
+    margin-left: 15rem;
+}
+.nav-item-footer{
+    color:#b0bcc7;
+}
+
+.fehrest{
+    margin-right: 1rem;
+}
+.image-footer{
+    width: 15rem;
+    height: 10rem;
+}
+.onvan-footer{
+    margin-right: 1rem;
+
+}
+
+
+@media screen and (min-width: 1170px) {
+    .footer-conteiner {
+        display: grid;
+    grid-template-columns: auto auto auto;
+    }
+    .onvan-footer{
+        margin-right: 3rem;
+    
+    }
+    .fehrest{
+        margin-left: 5rem;
+    }
+    .image-footer{
+        width: 15rem;
+        height: 10rem;
+    }
+}
+.malekiat{
+   max-width: 30rem;
+}

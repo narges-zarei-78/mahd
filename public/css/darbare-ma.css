@@ -1,0 +1,250 @@
+/* =================
+      font
+================= */
+@font-face {
+    font-family: "vazir";
+    src: url(../font/vazir/Farsi-Digits-Without-Latin/Vazir-FD-WOL.ttf),
+    url(../font/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.woff);
+}
+body{
+    background-color: #fff5f3;
+    direction: rtl;
+    font-family: "vazir";
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#ff8800;
+    
+}
+.cont-body{
+    background-color: #FFFFFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.titr{
+    color: #ff8800;
+    text-shadow:2px 2px 3px #f88808;
+}
+.text{
+    color: #ff8800;
+}
+
+/* =================
+      meno
+================= */
+
+
+.btn-narengi{
+    background-color: #ff8800;
+}
+.btn-narengi :hover{
+    background-color: #fff5f3;
+}
+.btn-narengi1{
+    border: none;
+    background-color: #ff8800;
+}
+
+
+.nav-item :hover{
+    color: #f88808;
+    background-color:#fff5f3 ;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 1s linear;;
+}
+.nav-meno{
+    padding-left: 5rem;
+}
+/* =================
+darbare-ma
+================= */
+.rang-titr-1{
+    color:#ff5f28 ;
+    text-shadow:0 5px 15px #ff5e2880;
+}
+.rang-titr-2{
+    color:#00af43 ;
+    text-shadow:0 5px 15px #00af4382;
+}
+.rang-titr-3{
+    color:#ffd200 ;
+    text-shadow:0 5px 15px #ffd00096;
+}
+.image-darbare{
+    width: 25rem;
+    height: 13rem;
+    border-bottom: 1rem solid #8be1b1;
+    border-top: 1rem solid #00c2df;
+    border-left:1rem solid #efbaf8;
+    border-right: 1rem solid #fddd3f;
+    margin-top: 1rem;
+}
+.image-darbare-2{
+    width: 25rem;
+    height: 25rem;
+    border-bottom: 1rem solid #8be1b1;
+    border-top: 1rem solid #00c2df;
+    border-left:1rem solid #efbaf8;
+    border-right: 1rem solid #fddd3f;
+
+}
+.darbare-ma-faliat{
+    list-style-type: decimal;
+    padding: 1rem;
+}
+@media screen and (min-width: 1170px) {
+    .image-darbare{
+        width: 50rem;
+        height: 25rem;
+    }
+}
+/* =================
+      emkanat
+================= */
+.rang-titr-1{
+    color:#ff5f28 ;
+    text-shadow:0 5px 15px #ff5e2880;
+}
+.rang-titr-2{
+    color:#00af43 ;
+    text-shadow:0 5px 15px #00af4382;
+}
+.rang-titr-3{
+    color:#ffd200 ;
+    text-shadow:0 5px 15px #ffd00096;
+}
+
+.article-card {
+    background: var(--clr-grey-4);
+    margin-bottom: 2rem;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    text-align: center;
+    min-height: 20rem;
+    border-radius: 2rem;
+}
+.section-title{
+    text-align: center;
+}
+
+.article-card:hover {
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);;
+    transform: scale(1.02);
+}
+.article-card-1{
+    background-color: #feefea;
+}
+.bus-rang-emkanat{
+    color: #ff5f28;
+}
+/* ------ */
+.article-card-2{
+    background-color: #fffae7;
+}
+.gaza-rang-emkanat{
+    color: #ffd200;
+}
+.article-card-3{
+    background-color: #e8f3ed;
+}
+.top-rang-emkanat{
+    color: #00af43;
+}
+.article-card-4{
+    background-color: #e7fafe;
+}
+.yadgiry-rang-emkanat{
+    color: #00c2df;
+}
+@media screen and (min-width: 768px) {
+    .articles-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article-card {
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+@media screen and (min-width: 1170px) {
+    .article-card {
+        flex: 0 0 calc(25% - 2rem);
+    }
+}
+
+
+
+
+
+/* =================
+footer
+================= */
+.footer-conteiner{
+    background-color: #103641;
+   
+    
+}
+.icon-footer{
+    display: grid;
+    grid-template-columns: 20px 25rem;
+}
+.icon-footer-2{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px ;
+}
+.icon-footers{
+    color:#b0bcc7;
+    
+}
+
+.darbare-ma-footer{
+    max-width: 20rem;
+    line-height: 2rem;
+    margin-left: 15rem;
+}
+.nav-item-footer{
+    color:#b0bcc7;
+}
+
+.fehrest{
+    margin-right: 1rem;
+}
+.image-footer{
+    width: 15rem;
+    height: 10rem;
+}
+.onvan-footer{
+    margin-right: 1rem;
+
+}
+
+
+@media screen and (min-width: 1170px) {
+    .footer-conteiner {
+        display: grid;
+    grid-template-columns: auto auto auto;
+    }
+    .onvan-footer{
+        margin-right: 3rem;
+    
+    }
+    .fehrest{
+        margin-left: 5rem;
+    }
+    .image-footer{
+        width: 15rem;
+        height: 10rem;
+    }
+}
+.malekiat{
+   max-width: 30rem;
+}
