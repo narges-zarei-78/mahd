@@ -14,13 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $teachers = \App\Models\User::Role('teacher')
+                                ->latest()
+                                ->take(3)
+                                ->get();
+    $classes  = \App\Models\Lesson::latest()
+                                  ->take(6)
+                                  ->get();
+    return view('welcome', compact('teachers', 'classes'));
 });
 Route::get('/about-us', function () {
     return view('aboutus');
 });
 Route::get('/class', function () {
-    return view('class');
+    $classes = \App\Models\Lesson::latest()
+                                 ->get();
+    return view('class', compact('classes'));
 });
 Route::get('/contact-us', function () {
     return view('tamas_ba_ma');
@@ -35,6 +44,13 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 Route::get('/morabi', function () {
-    return view('morabi');
+    $teachers = \App\Models\User::Role('teacher')
+                                ->latest()
+                                ->get();
+    return view('morabi', compact('teachers'));
 });
-Route::post('/admin/register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
+Route::get('/home', function () {
+    return redirect('/admin');
+});
+Route::post('/admin/register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])
+     ->name('register');

@@ -4,58 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مهد کودک نرگس</title>
-    <style type="text/css">
-        #map-canvas {
-            width: 700px;
-            height: 500px;
-            margin: 0 auto;
-        }
-    </style>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script type="text/javascript">
-        function initialize() {
-            var myLatlng = new google.maps.LatLng(36.219214, 59.616799);
-            var mapOptions = {
-                zoom     : 15,
-                center   : myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-            var contentString = '<div style="direction: rtl; text-align: right;font-family: Tahoma;">' +
-                '<h4>mashad , مهدکودک نرگس</h4>' +
-                '</div>';
-
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map     : map,
-                title   : 'Takhte Jamshid'
-            });
-
-            infowindow.open(map, marker);
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-            });
-        }
-    </script>
 </head>
 <!-- --------favicon-------- -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-<link rel="manifest" href="../icon/site.webmanifest">
+<link rel="manifest" href="/icon/site.webmanifest">
 <!-- --------link bootstrap-------- -->
 <link rel="stylesheet" href="/bootstrap/bootstrap.rtl.min.css">
 <link rel="stylesheet" href="/bootstrap/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <!-- --------link css-------- -->
-<link rel="stylesheet" href="/css/tamas-ba-ma.css">
-<body onload="initialize()">
+<link rel="stylesheet" href="/css/{{$style_file}}">
+<body>
 <div class="container cont-body">
     <!-- --------navbar-------- -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4  ">
@@ -68,73 +29,43 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto nav-meno">
                 <li class="nav-item">
-                    <a class="nav-link  fw-bold me-2 p-2" href="index.html">صفحه اصلی</a>
+                    <a class="nav-link  fw-bold me-2 p-2" href="/">صفحه اصلی</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  fw-bold me-2 p-2" href="/html/darbare-ma.html">درباره ما</a>
+                    <a class="nav-link  fw-bold me-2 p-2" href="/about-us">درباره ما</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  fw-bold me-2 p-2" href="/html/class.html"> کلاس ها و ثبت نام</a>
+                    <a class="nav-link  fw-bold me-2 p-2" href="/class"> کلاس ها و ثبت نام</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  fw-bold me-2 p-2" href="/html/ertebat-tasviri.html"> ارتباط تصویری </a>
+                    <a class="nav-link  fw-bold me-2 p-2" href="/tasviri"> ارتباط تصویری </a>
                 </li>
                 <div class=" dropdown ">
                     <a href="#" class="nav-link dropdown-toggle fw-bold " data-bs-toggle="dropdown">صفحات دیگر</a>
                     <div class="dropdown-menu rounded-0 border-0">
                         <li class="nav-item">
-                            <a class="nav-link  fw-bold me-2 p-2" href="/html/stekhdam-morabi.html">درخواست استخدام </a>
+                            <a class="nav-link  fw-bold me-2 p-2" href="/estekhdam">درخواست استخدام </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fw-bold me-2 p-2" href="/html/morabi.html">مربیان محبوب</a>
+                            <a class="nav-link  fw-bold me-2 p-2" href="/morabi">مربیان محبوب</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fw-bold me-2 p-2" href="/html/galeri.html">گالری</a>
+                            <a class="nav-link  fw-bold me-2 p-2" href="/gallery">گالری</a>
                         </li>
                     </div>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link  fw-bold me-2 p-2" href="/html/tamas-ba-ma.html"> تماس با ما</a>
+                    <a class="nav-link  fw-bold me-2 p-2" href="/contact-us"> تماس با ما</a>
                 </li>
 
             </div>
-            <a href="" class="btn btn-narengi btn-warning rounded-pill px-3"> ورود</a>
+            <a href="/admin" class="btn btn-narengi btn-warning rounded-pill px-3"> ورود</a>
         </div>
     </nav>
-    <!-- --------end navbar-------- -->
-    <img src="../image/tamas-ba-ma.jpg" class="img-fluid" alt="...">
-    <section>
-        <div class="row pt-5">
-            <div class="col-md-4 mt-5">
-                <div class="row icon-footer mb-5">
-                    <span class=" fs-3 text"><i class="bi bi-geo-alt-fill"></i></span>
-                    <p class="ms-3 fs-5 titr-saie-tosi fw-bold">مشهد_خیابان صبا _ صبا78_ پلاک 78</p>
-                </div>
 
+@yield('content')
 
-                <div class="row  icon-footer mb-5">
-                    <span class="  fs-3 text"><i class="bi bi-telephone-fill"></i></span>
-                    <p class="ms-3 fs-5 titr-saie-tosi fw-bold">+05133126923</p>
-                </div>
-                <div class="row icon-footer mb-5">
-                    <span class=" fs-3 text"><i class="bi bi-envelope-fill"></i></span>
-                    <p class="ms-3 fs-5 titr-saie-tosi fw-bold">@narges</p>
-                </div>
-                <div class="row icon-footer mb-5">
-                    <span class="fs-3 text"><i class="bi bi-clock-fill"></i></span>
-                    <p class="ms-3 fs-5 titr-saie-tosi fw-bold">شنبه تا چهارشنبه ها از ساعت 7 صبح تا 4 عصر</p>
-                </div>
-
-
-            </div>
-            <div class="col-md-8 mb-5">
-                <div id="map-canvas"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- --------footer-------- -->
+<!-- --------footer-------- -->
     <footer>
         <div class="row footer-conteiner pt-4 pb-5">
             <!-- ---------------------- -->
@@ -153,25 +84,25 @@
                 <div class="row  "><h5 class="-fooer fw-bold text-light">فهرست</h5></div>
                 <div class="navbar-nav mx-auto nav-meno">
                     <li class="nav-item  nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/index.html">صفحه اصلی</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/">صفحه اصلی</a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/darbare-ma.html">درباره ما</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/about-us">درباره ما</a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/class.html"> کلاس ها و ثبت نام</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/class"> کلاس ها و ثبت نام</a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/stekhdam-morabi.html">درخواست استخدام </a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/estekhdam">درخواست استخدام </a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/morabi.html">مربیان محبوب</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/morabi">مربیان محبوب</a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2" href="/html/galeri.html">گالری</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/gallery">گالری</a>
                     </li>
                     <li class="nav-item nav-item-footer">
-                        <a class="nav-link  fw-bold me-2 p-2 pb-5" href="/html/ertebat-tasviri.html"> ارتباط تصویری </a>
+                        <a class="nav-link  fw-bold me-2 p-2 pb-5" href="/tasviri"> ارتباط تصویری </a>
                     </li>
                     <div class="border-top border-3 border-white-50 pt-2">
                         <h6 class="text mb-1 malekiat">
@@ -201,8 +132,6 @@
                         <span class=" text-white-50 fs-5 "><i class="bi bi-clock-fill"></i></span>
                         <p class="ms-2">شنبه تا چهارشنبه ها از ساعت 7 صبح تا 4 عصر</p>
                     </div>
-
-
                     <div class=" row icon-footer-2 pt-3">
                         <div class=" me-3">
                             <a class="icon-footers nav-item " href=""><i class="bi bi-instagram fs-5 p-2"></i></a>
