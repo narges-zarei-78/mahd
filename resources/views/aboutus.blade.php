@@ -22,7 +22,7 @@
   <!-- --------navbar-------- -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4  ">
     <a href="index.html" class="navbar-brand">
-        <h4 class="fw-bold titr"><i class="fa fa-book-reader me-3"></i><img src="../icon/android-chrome-192x192.png" alt="Bootstrap" width="40" height="34"> مهدکودک نرگس</h4>
+        <h4 class="fw-bold titr"><i class="fa fa-book-reader me-3"></i><img src="/icon/android-chrome-192x192.png" alt="Bootstrap" width="40" height="34"> مهدکودک نرگس</h4>
     </a>
     <button type="button " class="navbar-toggler btn-narengi1" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -33,30 +33,30 @@
                 <a class="nav-link  fw-bold me-2 p-2" href="index.html">صفحه اصلی</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  fw-bold me-2 p-2" href="../html/darbare-ma.html">درباره ما</a>
+                <a class="nav-link  fw-bold me-2 p-2" href="/html/darbare-ma.html">درباره ما</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  fw-bold me-2 p-2" href="../html/class.html"> کلاس ها و ثبت نام</a>
+                <a class="nav-link  fw-bold me-2 p-2" href="/html/class.html"> کلاس ها و ثبت نام</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  fw-bold me-2 p-2" href="../html/ertebat-tasviri.html">   ارتباط تصویری  </a>
+                <a class="nav-link  fw-bold me-2 p-2" href="/html/ertebat-tasviri.html">   ارتباط تصویری  </a>
               </li>
             <div class=" dropdown ">
                 <a href="#" class="nav-link dropdown-toggle fw-bold " data-bs-toggle="dropdown">صفحات دیگر</a>
                 <div class="dropdown-menu rounded-0 border-0">
                       <li class="nav-item">
-                        <a class="nav-link  fw-bold me-2 p-2" href="../html/stekhdam-morabi.html">درخواست استخدام </a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/html/stekhdam-morabi.html">درخواست استخدام </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  fw-bold me-2 p-2" href="../html/morabi.html">مربیان محبوب</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/html/morabi.html">مربیان محبوب</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  fw-bold me-2 p-2" href="../html/galeri.html">گالری</a>
+                        <a class="nav-link  fw-bold me-2 p-2" href="/html/galeri.html">گالری</a>
                       </li>
                 </div>
             </div>
             <li class="nav-item">
-                <a class="nav-link  fw-bold me-2 p-2" href="../html/tamas-ba-ma.html"> تماس با ما</a>
+                <a class="nav-link  fw-bold me-2 p-2" href="/html/tamas-ba-ma.html"> تماس با ما</a>
               </li>
 
         </div>
@@ -72,7 +72,7 @@
 
 <!-- --------darbare-ma-------- -->
 <div>
-    <img src="../image/safhe-darbare-ma.JPG" class="img-fluid" alt="...">
+    <img src="/image/safhe-darbare-ma.JPG" class="img-fluid" alt="...">
 </div>
 <div >
   <h2 class=" fw-bold pt-5 pb-2 text-center mt-4 mb-4 "><span class="rang-titr-2">مهد</span><span class="rang-titr-3">کودک</span> <span class="rang-titr-1">نرگس</span> </h2>
@@ -83,7 +83,7 @@
     شما را در محیطی ایمن و شاد شکوفا می کنیم.</p>
   </div>
   <div class="text-center mt-5">
-    <img src="../image/darbare.jpg " class="rounded image-darbare" alt="...">
+    <img src="/image/darbare.jpg " class="rounded image-darbare" alt="...">
   </div >
   <div class="container"><p class=" fs-5 mt-5">
     مهدکودک و آمادگی خصوصی نرگس در مهرماه سال 1378 با حضور 40 ( چهل ) کودک و 8(هشت ) نفر کادر تاسیس و آغاز به کار نمود .دانش
@@ -174,9 +174,9 @@
     <li> کمک به مادران و پدران در مراقبت، نگهداری و پرورش کودکان در ایجاد ارتباط موثر دو جانبه بین کودک و والدین</li>
    </ul>
    <div class="text-center my-5">
-    <img src="../image/darbare1.jpg " class="rounded image-darbare-2 mb-2" alt="...">
-    <img src="../image/darbare2.jpg " class="rounded image-darbare-2 mb-2" alt="...">
-    <img src="../image/darbare3.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+    <img src="/image/darbare1.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+    <img src="/image/darbare2.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+    <img src="/image/darbare3.jpg " class="rounded image-darbare-2 mb-2" alt="...">
 
    </div>
    <div class="container">
@@ -203,9 +203,9 @@
    <p class="fs-5">* منوي صبحانه، میان وعده و ناهار با مشاوره متخصص تغذیه متناسب با رشد و علاقه كودك از مواد
      اولیه تازه و سالم توسط آشپز با تجربه تهیه می گردد. هر زمان والدین مایل بودند می توانند غذا را تست نمایند.</p>
      <div class="text-center">
-     <img src="../image/darbare4.jpg " class="rounded image-darbare-2 mb-2" alt="...">
-     <img src="../image/darbare5.jpg " class="rounded image-darbare-2 mb-2" alt="...">
-     <img src="../image/darbare7.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+     <img src="/image/darbare4.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+     <img src="/image/darbare5.jpg " class="rounded image-darbare-2 mb-2" alt="...">
+     <img src="/image/darbare7.jpg " class="rounded image-darbare-2 mb-2" alt="...">
     </div>
     <div class="container">
    <p class="fs-5">فعاليتهاي مهد كودك به طور کلی به شرح زير خلاصه مي شود :</p>
@@ -254,38 +254,38 @@
   <div class="row footer-conteiner pt-4 pb-5">
 <!-- ---------------------- -->
       <div class="mt-4 onvan-footer">
-          <h4 class="fw-bold text "><i class="fa fa-book-reader me-3"></i><img src="../icon/android-chrome-192x192.png" alt="Bootstrap" width="40" height="34"> مهدکودک نرگس</h4>
+          <h4 class="fw-bold text "><i class="fa fa-book-reader me-3"></i><img src="/icon/android-chrome-192x192.png" alt="Bootstrap" width="40" height="34"> مهدکودک نرگس</h4>
           <p class="darbare-ma-footer text-center text-white-50 pt-2 ">
               ما محیطی را فراهم کرده ایم که کودکان آموزش را زندگی کنند.
                خود تجربه کنند، خود مهارتها و ارزشهای انسانی را
                 بیاموزند، خود ارزیابی کنند و خود هیجاناتشان را بیفزایند.
           </p>
-          <img src="../image/footer.jpg" alt="" class="image-footer mt-4">
+          <img src="/image/footer.jpg" alt="" class="image-footer mt-4">
   </div>
 <!-- ---------------------- -->
       <div class="mt-4 fehrest">
           <div class="row  "> <h5 class="-fooer fw-bold text-light">فهرست</h5></div>
           <div class="navbar-nav mx-auto nav-meno">
               <li class="nav-item  nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/index.html">صفحه اصلی</a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/index.html">صفحه اصلی</a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/darbare-ma.html">درباره ما</a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/darbare-ma.html">درباره ما</a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/class.html"> کلاس ها و ثبت نام</a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/class.html"> کلاس ها و ثبت نام</a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/stekhdam-morabi.html">درخواست استخدام </a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/stekhdam-morabi.html">درخواست استخدام </a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/morabi.html">مربیان محبوب</a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/morabi.html">مربیان محبوب</a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2" href="../html/galeri.html">گالری</a>
+                  <a class="nav-link  fw-bold me-2 p-2" href="/html/galeri.html">گالری</a>
                 </li>
                 <li class="nav-item nav-item-footer">
-                  <a class="nav-link  fw-bold me-2 p-2 pb-5" href="../html/ertebat-tasviri.html">   ارتباط تصویری  </a>
+                  <a class="nav-link  fw-bold me-2 p-2 pb-5" href="/html/ertebat-tasviri.html">   ارتباط تصویری  </a>
                 </li>
                 <div class="border-top border-3 border-white-50 pt-2">
                   <h6 class="text mb-1 malekiat">
