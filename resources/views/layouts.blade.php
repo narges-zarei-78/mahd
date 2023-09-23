@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مهد کودک نرگس</title>
+    @yield('header-style')
+
+    @yield('header-script')
 </head>
 <!-- --------favicon-------- -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
